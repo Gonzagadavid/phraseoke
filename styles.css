@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+body {
+  background-color: #121212;
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.container {
+  width: 100%;
+  max-width: 800px;
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #00c2ff;
+}
+
+.controls {
+  margin-bottom: 30px;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #ccc;
+}
+
+textarea,
+input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 5px;
+  border: 1px solid #444;
+  background-color: #2d2d2d;
+  color: #fff;
+  font-size: 16px;
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
+  border-color: #00c2ff;
+}
+
+.btn {
+  padding: 12px 24px;
+  background-color: #00c2ff;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  margin-right: 10px;
+}
+
+.btn:hover {
+  background-color: #00a8e0;
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background-color: #666;
+  color: #fff;
+}
+
+.btn-secondary:hover {
+  background-color: #555;
+}
+
+.display-container {
+  background-color: #000;
+  border-radius: 10px;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.display {
+  min-height: 150px;
+  font-size: 24px;
+  line-height: 1.5;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.progress-container {
+  height: 10px;
+  background-color: #333;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  width: 0;
+  background-color: #00c2ff;
+  transition: width 0.1s linear;
+}
+
+.highlighted {
+  color: #00c2ff;
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 15px;
+  }
+
+  .display {
+    font-size: 20px;
+    min-height: 120px;
+  }
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Videoke App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Simple Videoke</h1>
+    
+    <div class="controls">
+      <div class="input-group">
+        <label for="lyrics">Enter Lyrics:</label>
+        <textarea id="lyrics" rows="5" placeholder="Enter your lyrics here..."></textarea>
+      </div>
+      
+      <div class="input-group">
+        <label for="duration">Duration (seconds):</label>
+        <input type="number" id="duration" min="1" max="300" value="30">
+      </div>
+      
+      <button id="startBtn" class="btn">Start Videoke</button>
+      <button id="resetBtn" class="btn btn-secondary">Reset</button>
+    </div>
+    
+    <div class="display-container">
+      <div id="display" class="display">
+        <p>Your lyrics will appear here...</p>
+      </div>
+      <div class="progress-container">
+        <div id="progress-bar" class="progress-bar"></div>
+      </div>
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
